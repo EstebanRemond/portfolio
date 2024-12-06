@@ -12,11 +12,67 @@
     transition: all 0.3s ease;
 }
 
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#accueil .hero-content,
+#accueil .hero-image {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+#accueil .hero-content {
+    animation-delay: 0.3s;
+}
+
+#accueil .hero-image {
+    animation-delay: 0.6s;
+}
+
+#projets .projet-card {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+#projets .projet-card:nth-child(1) { animation-delay: 0.3s; }
+#projets .projet-card:nth-child(2) { animation-delay: 0.6s; }
+#projets .projet-card:nth-child(3) { animation-delay: 0.9s; }
+#projets .projet-card:nth-child(4) { animation-delay: 1.2s; }
+
+#contact {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 1.5s;
+}
+
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: var(--background-color);
+    background: linear-gradient(-45deg, #ffffff, #cbe6ff, #ffffff, #bde0ff);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .container {
@@ -46,6 +102,7 @@ nav a {
     text-decoration: none;
     font-weight: 500;
     position: relative;
+    transition: color 0.3s ease;
 }
 
 nav a::after {
@@ -56,11 +113,11 @@ nav a::after {
     bottom: -5px;
     left: 0;
     background-color: var(--primary-color);
-    transition: width 0.3s;
 }
 
 nav a:hover::after {
     width: 100%;
+
 }
 
 #accueil {
@@ -149,6 +206,13 @@ nav a:hover::after {
     justify-content: center;
     gap: 10px;
     margin-top: 15px;
+}
+
+.projet-card img {
+    max-width: 30%;
+    min-width: 30%;
+    padding-top: 3px;
+    padding-bottom: 10px;
 }
 
 .tag {
