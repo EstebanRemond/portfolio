@@ -37,11 +37,6 @@
     animation-delay: 0.6s;
 }
 
-#projets .projet-card {
-    opacity: 0;
-    animation: fadeInUp 0.8s ease-out forwards;
-}
-
 #projets .projet-card:nth-child(1) { animation-delay: 0.3s; }
 #projets .projet-card:nth-child(2) { animation-delay: 0.6s; }
 #projets .projet-card:nth-child(3) { animation-delay: 0.9s; }
@@ -73,6 +68,11 @@ body {
     100% {
         background-position: 0% 50%;
     }
+}
+
+.project-title{
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 .container {
@@ -113,11 +113,11 @@ nav a::after {
     bottom: -5px;
     left: 0;
     background-color: var(--primary-color);
+    transition: width 0.3s ease;
 }
 
 nav a:hover::after {
     width: 100%;
-
 }
 
 #accueil {
@@ -182,7 +182,7 @@ nav a:hover::after {
 
 .projets-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 }
 
