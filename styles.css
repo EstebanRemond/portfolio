@@ -12,6 +12,30 @@
     transition: all 0.3s ease;
 }
 
+h2 {
+    text-align: center;
+}
+
+
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.contact-logo {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.contact-logo:hover {
+    transform: scale(1.1);
+}
+
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -21,6 +45,13 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+#accueil{
+    background: linear-gradient(-45deg, #ffffff, #cbe6ff, #ffffff, #bde0ff);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    height: 100vh;
 }
 
 #accueil .hero-content,
@@ -37,25 +68,10 @@
     animation-delay: 0.6s;
 }
 
-#projets .projet-card:nth-child(1) { animation-delay: 0.3s; }
-#projets .projet-card:nth-child(2) { animation-delay: 0.6s; }
-#projets .projet-card:nth-child(3) { animation-delay: 0.9s; }
-#projets .projet-card:nth-child(4) { animation-delay: 1.2s; }
-
-#contact {
-    opacity: 0;
-    animation: fadeInUp 1s ease-out forwards;
-    animation-delay: 1.5s;
-}
-
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background: linear-gradient(-45deg, #ffffff, #cbe6ff, #ffffff, #bde0ff);
-    background-size: 400% 400%;
-    animation: gradient 10s ease infinite;
-    height: 100vh;
 }
 
 @keyframes gradient {
@@ -76,9 +92,8 @@ body {
 }
 
 .container {
-    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 10%;
 }
 
 header {
@@ -215,6 +230,36 @@ nav a:hover::after {
     padding-bottom: 10px;
 }
 
+#about.container {
+    padding: 40px 10%;
+    background: linear-gradient(-45deg, #ffffff, #cbe6ff, #ffffff, #bde0ff);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+.about-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    margin: 20px;
+}
+
+.icone-a-propos {
+    max-height: 64px;
+    width: auto;
+    margin-bottom: 15px;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+    align-items: start;
+}
+
 .tag {
     padding: 5px 10px;
     border-radius: 20px;
@@ -224,6 +269,7 @@ nav a:hover::after {
 }
 
 #contact {
+    background-color: white;
     text-align: center;
     padding: 80px 0;
 }
