@@ -2,9 +2,158 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet E-commerce</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<header>
+    <div class="container header-content">
+        <h1>Esteban Rémond - Projet E-commerce</h1>
+        <nav>
+            <a href="https://estebanremond.github.io/portfolio/">Accueil</a>
+            <a href="https://estebanremond.github.io/portfolio/#projets">Projets</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
 
+<main>
+    <section id="intro" class="container">
+        <h1>Site E-commerce Dynamique</h1>
+        <p>Développement d'un site e-commerce complet en équipe pour un projet universitaire.</p>
+    </section>
+
+    <section id="presentation" class="container">
+        <h2>Présentation du projet</h2>
+
+        <div class="block">
+            <img src="images/logo.png" alt="Logo E-commerce">
+            <div>
+                <p>
+                    Ce projet a été réalisé dans le cadre de notre formation en BUT Informatique. En équipe de trois
+                    personnes, nous avions pour mission de créer un site e-commerce dynamique connecté à une base de
+                    données. Ce projet visait à offrir une expérience utilisateur intuitive et des fonctionnalités de
+                    gestion avancées pour les utilisateurs et administrateurs.
+                </p>
+            </div>
+        </div>
+
+        <div class="block">
+            <div>
+                <h3>
+                    Mon rôle principal au sein de l'équipe s'est concentré sur trois aspects clés :
+                </h3>
+                <div class="features-list">
+                    <ul>
+                        <li>La modélisation et la mise en place de la base de données pour gérer les produits, les
+                            utilisateurs et les permissions.
+                        </li>
+                        <li>La sécurisation du site, notamment au niveau des formulaires et des interactions avec la
+                            base de données, pour prévenir les vulnérabilités comme les injections SQL.
+                        </li>
+                        <li>Le design UX afin d'offrir une interface ergonomique et adaptée aux besoins des utilisateurs
+                            finaux.
+                        </li>
+                    </ul>
+                </div>
+
+                <h4>Grâce à nos efforts et à une bonne répartition des tâches, nous avons obtenu une excellente note pour
+                    ce projet.</h4>
+            </div>
+
+
+        </div>
+
+        <h3>Fonctionnalités principales</h3>
+        <div class="features-list">
+            <ul>
+                <li>Gestion des stocks et des produits en temps réel</li>
+                <li>Gestion des permissions et des rôles pour différents types d'utilisateurs</li>
+                <li>Système de paiement simulé et panier d'achat dynamique</li>
+                <li>Interface utilisateur intuitive et moderne</li>
+                <li>Sélection des thèmes avec enregistrement des préférences utilisateur dans les cookies</li>
+            </ul>
+        </div>
+        <div class="projet-links">
+            <a href="https://webinfo.iutmontp.univ-montp2.fr/~fievetl/BlackArsenal/web/controleurFrontal.php"
+               class="btn btn-primary">Visiter le site</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="screenshot-gallery">
+                <div class="screenshot">
+                    <img src="images/screenshots/home_ecommerce.png" alt="Interface du site e-commerce">
+                </div>
+                <div class="screenshot">
+                    <img src="images/screenshots/buy_ecommerce.png" alt="Interface administrateur">
+                </div>
+                <div class="screenshot">
+                    <img src="images/screenshots/user_ecommerce.png" alt="Page d'accueil du site">
+                </div>
+                <div class="screenshot">
+                    <img src="images/screenshots/weapons_ecommerce.png" alt="Page produit">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="competences" class="container">
+        <h2>Compétences mises en oeuvre</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <img src="images/icones_competences/sql.png" alt="SQL">
+                <h3>SQL</h3>
+                <p>Modélisation et gestion de la base de données</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/icones_competences/php.png" alt="PHP">
+                <h3>PHP</h3>
+                <p>Développement du back-end sécurisé</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/icones_competences/html-5.png" alt="HTML">
+                <h3>HTML</h3>
+                <p>Structure et contenu des pages web</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/icones_competences/css-3.png" alt="CSS">
+                <h3>CSS</h3>
+                <p>Design UX et personnalisation graphique</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/icones_competences/js.png" alt="JavaScript">
+                <h3>JavaScript</h3>
+                <p>Ajout de fonctionnalités dynamiques</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/icones_competences/gitlab.png" alt="GitLab">
+                <h3>GitLab</h3>
+                <p>Gestion du code source et des versions</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contactez-moi</h2>
+        <p>Intéressé par mon profil ? N'hésitez pas à me contacter.</p>
+        <div class="contact-links">
+            <a href="https://github.com/EstebanRemond" target="_blank">
+                <img src="images/github.png" alt="GitHub" class="contact-logo">
+            </a>
+            <a href="https://www.linkedin.com/in/esteban-rémond" target="_blank">
+                <img src="images/linkedin.png" alt="LinkedIn" class="contact-logo">
+            </a>
+        </div>
+        <a href="mailto:esteban.remond@etu.umontpellier.fr" class="btn btn-primary">Envoyer un Email</a>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+</footer>
 </body>
 </html>
