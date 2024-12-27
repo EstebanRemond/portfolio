@@ -2,9 +2,123 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Trains</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<header>
+    <div class="container header-content">
+        <h1>Esteban Rémond - Projet Trains</h1>
+        <nav>
+            <a href="https://estebanremond.github.io/portfolio/">Accueil</a>
+            <a href="https://estebanremond.github.io/portfolio/#projets">Projets</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
 
+<main>
+    <section id="intro" class="container">
+        <h1>Projet Trains</h1>
+        <p>Adaptation numérique du jeu de plateau Trains.</p>
+    </section>
+
+    <section id="presentation" class="container">
+        <h2>Présentation du projet</h2>
+
+        <div class="block">
+            <img src="images/logoTrains.png" alt="Logo du jeu trains">
+            <div>
+                <p>
+                    Ce projet a été développé en binome en fin de première année de BUT Informatique.
+                    Nous avions pour mission de mettre sous format numérique un jeu de plateau existant, Trains, en respectant les règles et les contraintes du jeu original.
+                </p>
+            </div>
+        </div>
+
+        <div class="block">
+            <div>
+                <p>
+                    Nous avons utilisé Java pour le développement back-end et JavaFX pour le front-end du jeu.
+                    Le back-end gère la logique du jeu, les interactions entre les joueurs, le calcul des scores et des conditions de victoire.
+                    JavaFX a été choisi pour créer une interface utilisateur intuitive et visuellement attrayante et des éléments graphiques clairs.
+                    Des tests unitaires ont été intégrés pour assurer la fiabilité des fonctionnalités et garantir une expérience utilisateur stable.
+                </p>
+            </div>
+            <img src="images/screenshots/launcher_trains.png" alt="Interface administrateur">
+        </div>
+
+        <h3>Fonctionnalités principales</h3>
+        <div class="features-list">
+            <ul>
+                <li>Gestion des joueurs et du plateau via un launcher</li>
+                <li>Interface graphique simple et intuitive.</li>
+                <li>Logique métier conforme au règles du jeu</li>
+            </ul>
+        </div>
+        <div class="projet-links">
+            <a href="https://github.com/EstebanRemond/trains"
+               class="btn btn-primary">Voir le code source</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="screenshot-gallery">
+                <div class="screenshot">
+                    <img src="images/screenshots/interface_trains.png" alt="Interface du site e-commerce">
+                </div>
+                <div class="screenshot">
+                    <img src="images/screenshots/interface2_trains.png" alt="Interface administrateur">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="competences" class="container">
+        <h2>Compétences mises en oeuvre</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <img src="images/icones_competences/java.png" alt="Java">
+                <h3>Java</h3>
+                <p>Programmation du back end</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/icones_competences/javafx.png" alt="JavaFX">
+                <h3>JavaFX</h3>
+                <p>Création d'interfaces graphiques</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/icones_competences/poo.png" alt="POO">
+                <h3>POO</h3>
+                <p>Programmation orientée objet avec création de diagramme UML</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/icones_competences/gitlab.png" alt="GitLab">
+                <h3>GitLab</h3>
+                <p>Gestion du code source et des versions</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contactez-moi</h2>
+        <p>Intéressé par mon profil ? N'hésitez pas à me contacter.</p>
+        <div class="contact-links">
+            <a href="https://github.com/EstebanRemond" target="_blank">
+                <img src="images/github.png" alt="GitHub" class="contact-logo">
+            </a>
+            <a href="https://www.linkedin.com/in/esteban-rémond" target="_blank">
+                <img src="images/linkedin.png" alt="LinkedIn" class="contact-logo">
+            </a>
+        </div>
+        <a href="mailto:esteban.remond@etu.umontpellier.fr" class="btn btn-primary">Envoyer un Email</a>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+</footer>
 </body>
 </html>
