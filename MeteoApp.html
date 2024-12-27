@@ -2,9 +2,158 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteo App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/rounded_Rémond_Esteban.png" type="image/png">
+
 </head>
 <body>
+<header>
+    <div class="container header-content">
+        <div class="header-left">
+            <a href="https://estebanremond.github.io/portfolio/">
+                <img src="images/rounded_Rémond_Esteban.png" alt="Logo Esteban Rémond">
+            </a>
+            <h1>Esteban Rémond - MeteoApp</h1>
+        </div>
+        <nav>
+            <a href="https://estebanremond.github.io/portfolio/">Accueil</a>
+            <a href="https://estebanremond.github.io/portfolio/#projets">Projets</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
 
+<main>
+    <section id="intro" class="container">
+        <h1>Meteo App</h1>
+        <p>Petite application météo utilisant une API externe.</p>
+    </section>
+
+    <section id="presentation" class="container">
+        <h2>Présentation du projet</h2>
+
+        <div class="block">
+            <img src="images/icones_competences/vue.png" alt="Logo de Vue.js">
+            <div>
+                <p>
+                    Le JavaScript et son framework Vue sont très utilisé en entreprise, souhaitant être le plus
+                    oppérationnel possible, j'ai décidé de me former sur ces technologies durant mon temps libre.
+                    Après avoir suivi des cours en ligne de JavaScript et Vue, je me suis dit : quoi de mieux que de
+                    réaliser un petit projet pour mettre en application ce que j'ai pu apprendre !
+                    J'ai donc décidé de créer une application météo qui permet de consulter la météo de différentes
+                    villes du monde.
+                </p>
+            </div>
+        </div>
+
+        <div class="block">
+            <div>
+                <p>
+                    Ce projet m'a permis de me familiariser avec Vue.js et son environnement, notamment la gestion des
+                    données, les appels API avec fetch, et la création d'interfaces interactives en CSS. J'ai aussi
+                    appris à manipuler les événements utilisateurs et à adapter l'affichage, ici l'image de fond, en
+                    fonction de la température de la ville sélectionnée. À l'aide d'une vidéo, j'ai suivi pas à pas les
+                    étapes à suivre tout en essayant de comprendre chaque ligne que j'écrivais. J'ai également
+                    personnalisé légèrement l'application moi-même.
+                </p>
+            </div>
+            <img src="images/meteo.png" alt="Logo de l'application météo">
+        </div>
+
+        <h3>Fonctionnalités principales</h3>
+        <div class="features-list">
+            <ul>
+                <li>Communication avec une API</li>
+                <li>Image d'arrière-plan dynamique qui change selon la température</li>
+                <li>Interface simple et moderne</li>
+            </ul>
+        </div>
+        <div class="projet-links">
+            <a href="https://github.com/EstebanRemond/MeteoApp"
+               class="btn btn-primary">Voir le code source</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="screenshot-gallery">
+                <div class="screenshot">
+                    <img src="images/screenshots/montpellier_MeteoApp.png"
+                         alt="exemple d'utilisation avec la ville de Montpellier">
+                </div>
+                <div class="screenshot">
+                    <img src="images/screenshots/saint-andre_MeteoApp.png"
+                         alt="exemple d'utilisation avec la ville de Saint-andré">
+                </div>
+            </div>
+            <h3>Bien entendu, ce projet peut être grandement amélioré</h3>
+            <div class="features-list">
+                <ul>
+                    <li>Améliorer l'ergonomie et la disposition des différents éléments</li>
+                    <li>Traduire les dates et les noms de villes</li>
+                    <li>Proposer des prévisions météo sur plusieurs jours</li>
+                    <li>Mettre une photo de la ville selectionné en arrière-plan</li>
+                    <li>Ajouter des effets visuels (pluie, neige, rayons lumineux, etc.)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="competences" class="container">
+        <h2>Compétences mises en oeuvre</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <img src="images/icones_competences/vue.png" alt="Vue.js">
+                <h3>Vue.js</h3>
+                <p>Framework de création d'interfaces dynamiques et réactives en javaScript</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/icones_competences/js.png" alt="JavaScript">
+                <h3>JavaScript</h3>
+                <p>Programmation front-end</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/icones_competences/html-5.png" alt="HTML">
+                <h3>HTML</h3>
+                <p>Structure et contenu des pages web</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/icones_competences/css-3.png" alt="CSS">
+                <h3>CSS</h3>
+                <p>Style et mise en forme des pages web</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/icones_competences/vitejs.png" alt="Vite">
+                <h3>Vite</h3>
+                <p>Packaging et compilation du projet</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/icones_competences/json.png" alt="json">
+                <h3>JSON</h3>
+                <p>Configuration de l'application</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contactez-moi</h2>
+        <p>Intéressé par mon profil ? N'hésitez pas à me contacter.</p>
+        <div class="contact-links">
+            <a href="https://github.com/EstebanRemond" target="_blank">
+                <img src="images/github.png" alt="GitHub" class="contact-logo">
+            </a>
+            <a href="https://www.linkedin.com/in/esteban-rémond" target="_blank">
+                <img src="images/linkedin.png" alt="LinkedIn" class="contact-logo">
+            </a>
+        </div>
+        <a href="mailto:esteban.remond@etu.umontpellier.fr" class="btn btn-primary">Envoyer un Email</a>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+</footer>
 </body>
 </html>
