@@ -312,10 +312,10 @@ nav a:hover::after {
     background: linear-gradient(-45deg, #ffffff, #cbe6ff, #ffffff, #bde0ff);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
+    text-align: justify;
 }
 
 .about-section {
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -323,16 +323,29 @@ nav a:hover::after {
     margin: 20px;
 }
 
+.about-section p {
+    text-align: justify;
+    width: 100%;
+}
+
 .icone-a-propos {
     max-height: 64px;
     width: auto;
-    margin-bottom: 15px;
+    margin: 0 auto;
+    display: block;
 }
 
 .about-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    margin-top: 50px;
+    align-items: start;
+}
+
+.about-grid2 {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
     margin-top: 50px;
     align-items: start;
 }
