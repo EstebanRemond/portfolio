@@ -457,7 +457,7 @@
                                 href="https://estebanremond.github.io/portfolio/CTF.html">CTF</a> et stage: Faisabilité
                             technique</div>
                         <p>
-                            Pendant mes projets, j'ai parfois dû prendre du recul sur certaines demandes pour voir si
+                            Pendant mes projets, j'ai parfois du prendre du recul sur certaines demandes pour voir si
                             elles étaient vraiment réalisables (AC3). En respectant les règles juridiques et les normes
                             en vigueur (CE5.02), j'ai par exemple refusé des fonctionnalités trop complexes dans le
                             projet CTF, qui auraient mis en péril la sécurité ou les délais. En stage, j'ai aussi écarté
@@ -580,7 +580,6 @@
     </div>
 
     <script>
-        // Animation d'entrée pour les éléments au scroll
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -595,7 +594,6 @@
             });
         }, observerOptions);
 
-        // Application de l'animation aux éléments
         document.querySelectorAll('.competence, .ac-item').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(30px)';
@@ -603,7 +601,6 @@
             observer.observe(el);
         });
 
-        // Effet de hover sur les badges de status
         document.querySelectorAll('.status-badge').forEach(badge => {
             badge.addEventListener('mouseenter', () => {
                 badge.style.transform = 'scale(1.05)';
