@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet - Site de Critiques (Films)</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/rounded_Rémond_Esteban.png" type="image/png">
+</head>
+<body>
+<header>
+    <div class="container header-content">
+        <div class="header-left">
+            <a href="https://estebanremond.github.io/portfolio/">
+                <img src="images/rounded_Rémond_Esteban.png" alt="Logo Esteban Rémond">
+            </a>
+            <h1>Projet - Site de Critiques (Films)</h1>
+        </div>
+        <nav>
+            <a href="https://estebanremond.github.io/portfolio/">Accueil</a>
+            <a href="https://estebanremond.github.io/portfolio/#projets">Projets</a>
+            <a href="https://estebanremond.github.io/portfolio/ApprentissagesBUT.html">Apprentissages</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="intro" class="container">
+        <h1>Site de Critiques (Films)</h1>
+        <p>Conception d'une application client-serveur : API REST (Symfony + API Platform) pour le back-end, et une interface Vue.js pour le front-end.</p>
+    </section>
+
+    <section id="presentation" class="container">
+        <h2>Contexte & Objectif</h2>
+
+        <div class="presentation-header-card">
+            <div class="header-logo">
+                <img src="images/movie.png" alt="Logo movie">
+            </div>
+            <div class="header-text">
+                <p>
+                    Projet universitaire mené en équipe de 4. L'objectif est de développer deux applications communicantes :
+                    une API REST réalisée avec Symfony et API Platform, et une application cliente en Vue.js utilisant cette API.
+                    Le thème du site est la critique de films avec des fiches pour chaque films, une gestion des utilisateurs, système de notes et critères multiples.
+                </p>
+            </div>
+        </div>
+
+        <h3 class="section-subtitle">Fonctionnalités côté utilisateur</h3>
+        <div class="missions-grid">
+            <div class="mission-card">
+                <h4>Liste des films</h4>
+                <p>Afficher la liste des films présents en base de données avec pagination, recherche et filtres.</p>
+            </div>
+            <div class="mission-card">
+                <h4>Page d'un film</h4>
+                <p>Afficher les informations complètes du film, le nombre de critiques, la note moyenne et le détail des critiques associées.</p>
+            </div>
+            <div class="mission-card">
+                <h4>Inscription & Gestion du compte</h4>
+                <p>Permettre aux utilisateurs de s'inscrire, de s'authentifier (JWT), de modifier leurs informations personnelles et de supprimer leur compte.</p>
+            </div>
+            <div class="mission-card">
+                <h4>Publication & Administration</h4>
+                <p>Les utilisateurs connectés peuvent proposer une fiche film. Les administrateurs valident les soumissions, peuvent supprimer des films et gérer les comptes utilisateurs.</p>
+            </div>
+            <div class="mission-card">
+                <h4>Création et gestion des critiques</h4>
+                <p>Un utilisateur connecté peut créer, modifier ou supprimer sa propre critique. Les administrateurs peuvent supprimer n'importe quelle critique.</p>
+            </div>
+            <div class="mission-card">
+                <h4>Pages utilisateur & favoris</h4>
+                <p>La page utilisateur liste ses critiques. Les utilisateurs peuvent marquer des films en favoris et consulter une page dédiée regroupant les dernières critiques des films favoris.</p>
+            </div>
+        </div>
+
+
+        <section class="section">
+            <div class="container">
+                <div class="screenshot-gallery">
+                    <div class="screenshot">
+                        <a href="images/screenshots/critiquefilms1.png" target="_blank">
+                            <img src="images/screenshots/critiquefilms1.png" alt="Interface du jeu 1">
+                        </a>
+                    </div>
+                    <div class="screenshot">
+                        <a href="images/screenshots/critiquefilms2.png" target="_blank">
+                            <img src="images/screenshots/critiquefilms2.png" alt="Interface du jeu 2">
+                        </a>
+                    </div>
+                    <div class="screenshot">
+                        <a href="images/screenshots/critiquefilms3.png" target="_blank">
+                            <img src="images/screenshots/critiquefilms3.png" alt="Interface du jeu 2">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h3>Exigences techniques & bonnes pratiques</h3>
+        <div class="features-list">
+            <ul>
+                <li>Routes nommées et cohérentes pour l'API (RESTful).</li>
+                <li>Gestion correcte de la connexion / déconnexion et rafraîchissement des tokens JWT (refresh token).</li>
+                <li>Découpage en vues et composants front pertinents, code typé en TypeScript.</li>
+                <li>Gestion des erreurs réseau et messages utilisateurs (notifications / flashes).</li>
+                <li>Connexion des avatars à MyAvatar (hachage SHA-256 de l'email côté serveur)</li>
+                <li>Utilisation d'une API externe pour récupérer les affiches de films</li>
+            </ul>
+        </div>
+
+        <h3 class="section-subtitle">Processus de développement</h3>
+        <div class="process-timeline">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <h4>Spécifier</h4>
+                <p>Définir le modèle de données et les critères des critiques.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">2</div>
+                <h4>Développer API</h4>
+                <p>Implémentation des ressources, tests et sécurité (JWT).</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">3</div>
+                <h4>Construire Front</h4>
+                <p>Composants Vue, gestion des états, appels API et UI accessible.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">4</div>
+                <h4>Tester & Déployer</h4>
+                <p>Tests fonctionnels, correction, et publication sur un serveur.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="competences" class="container">
+        <h2>Technologies & Compétences</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <img src="images/icones_competences/php.png" alt="Symfony et PHP">
+                <h3>Symfony et API Platform</h3>
+                <p>Ressources API, security, StateProcessor, serialisation et validators.</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/icones_competences/vitejs.png" alt="Vite">
+                <h3>Vite</h3>
+                <p>Packaging et compilation du projet</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/icones_competences/vue.png" alt="Vue.js">
+                <h3>Vue.js / TypeScript</h3>
+                <p>Composants, routing, gestion d'état et consommation d'API REST.</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/icones_competences/sql.png" alt="Base de données">
+                <h3>Bases de données</h3>
+                <p>Modélisation, migrations et requêtes</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/icones_competences/docker.png" alt="Docker">
+                <h3>CI / Déploiement</h3>
+                <p>Docker et scripts de déploiement</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact & Ressources</h2>
+        <p>Projet réalisé en équipe — pour plus d'infos, le dépôt et la documentation sont fournis sur demande.</p>
+        <div class="contact-links">
+            <a href="https://github.com/EstebanRemond" target="_blank">
+                <img src="images/github.png" alt="GitHub" class="contact-logo">
+            </a>
+            <a href="https://www.linkedin.com/in/esteban-rémond" target="_blank">
+                <img src="images/linkedin.png" alt="LinkedIn" class="contact-logo">
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Portfolio Esteban Rémond. Tous droits réservés.</p>
+</footer>
+</body>
+</html>
