@@ -16,6 +16,22 @@ h2 {
     text-align: center;
 }
 
+.project-info-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem 2rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    padding: 0.6rem 1rem;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    font-size: 0.85rem;
+}
+
+.project-info-box span {
+    color: #555;
+}
+
 header img {
     width: 40px;
     height: 40px;
@@ -248,6 +264,15 @@ nav a:hover::after {
     padding: 1.5rem;
 }
 
+.projet-date {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    font-size: 0.8rem;
+    color: #888;
+    margin-left: auto;
+    align-self: center;
+}
+
 .projet-description {
     margin-bottom: 1.5rem;
     color: #666;
@@ -277,8 +302,10 @@ nav a:hover::after {
 
 .projet-links {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     margin-top: 1.5rem;
+    align-items: center;
 }
 
 .projet-card img {

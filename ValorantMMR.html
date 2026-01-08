@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet - Valorant MMR Estimator</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/rounded_Rémond_Esteban.png" type="image/png">
+</head>
+<body>
+<header>
+    <div class="container header-content">
+        <div class="header-left">
+            <a href="https://estebanremond.github.io/portfolio/">
+                <img src="images/rounded_Rémond_Esteban.png" alt="Logo Esteban Rémond">
+            </a>
+            <h1>Projet - Valorant MMR Estimator</h1>
+        </div>
+        <nav>
+            <a href="https://estebanremond.github.io/portfolio/">Accueil</a>
+            <a href="https://estebanremond.github.io/portfolio/#projets">Projets</a>
+            <a href="https://estebanremond.github.io/portfolio/ApprentissagesBUT.html">Apprentissages</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="intro" class="container">
+        <h1>Valorant MMR Estimator</h1>
+        <p>Outil web permettant d'estimer le MMR caché des joueurs Valorant via l'API officielle.</p>
+    </section>
+
+    <section id="presentation" class="container">
+        <div class="project-info-box">
+            <span><strong>Date :</strong> En cours • 2026</span>
+            <span><strong>Durée :</strong> ~2 mois</span>
+            <span><strong>Équipe :</strong> Projet solo</span>
+            <span><strong>Type :</strong> Projet personnel</span>
+        </div>
+        <h2>Contexte & Objectif</h2>
+
+        <div class="presentation-header-card">
+            <div class="header-logo">
+                <img src="images/ValorantLOGO.png" alt="Logo Valorant">
+            </div>
+            <div class="header-text">
+                <p>
+                    Dans Valorant, le MMR (Matchmaking Rating) est un indicateur caché qui détermine le niveau réel 
+                    d'un joueur et influence le matchmaking. Contrairement au rang visible, le MMR n'est pas accessible 
+                    directement. Ce projet personnel vise à créer un outil web capable d'estimer ce MMR en analysant 
+                    l'ELO moyen des adversaires rencontrés lors des 10 dernières parties.
+                </p>
+            </div>
+        </div>
+
+        <div class="presentation-header-card">
+            <div class="header-logo">
+                <img src="images/icones_competences/settings.png" alt="Icône technique">
+            </div>
+            <div class="header-text">
+                <p>
+                    Ce projet est né d'un constat simple : aucun outil fiable et sécurisé n'existe actuellement pour 
+                    estimer précisément le MMR caché. En tant que joueur de Valorant évoluant à haut niveau et participant 
+                    à des tournois locaux, j'ai voulu créer un outil utile pour moi-même et la communauté, tout en 
+                    développant de nouvelles compétences techniques.
+                </p>
+            </div>
+        </div>
+
+        <h3 class="section-subtitle">Défis techniques</h3>
+        <div class="missions-grid">
+            <div class="mission-card">
+                <h4>Connexion à l'API Valorant</h4>
+                <p>Intégration avec l'API officielle de Riot Games pour récupérer les données de matchs et de joueurs en temps réel.</p>
+            </div>
+            <div class="mission-card">
+                <h4>Traitement des données</h4>
+                <p>Extraction et structuration des informations pertinentes : historique des parties, rangs des adversaires, résultats.</p>
+            </div>
+            <div class="mission-card">
+                <h4>Algorithme d'estimation</h4>
+                <p>Développement d'un système de calcul basé sur l'ELO moyen des lobbies pour estimer le MMR réel du joueur.</p>
+            </div>
+            <div class="mission-card">
+                <h4>Hébergement & Performance</h4>
+                <p>Mise en place d'une infrastructure capable de gérer les appels API et d'offrir une expérience utilisateur fluide.</p>
+            </div>
+        </div>
+
+        <section class="section">
+            <div class="container">
+                <p><em>Captures d'écran provisoires, le projet est encore en cours de développement.</em></p>
+                <div class="screenshot-gallery">
+                    <div class="screenshot">
+                        <a href="images/screenshots/valorant1.png" target="_blank">
+                            <img src="images/screenshots/valorant1.png" alt="Page d'accueil MMR Estimator">
+                        </a>
+                    </div>
+                    <div class="screenshot">
+                        <a href="images/screenshots/valorant2.png" target="_blank">
+                            <img src="images/screenshots/valorant2.png" alt="Résultat d'analyse MMR">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h3 class="section-subtitle">Fonctionnalités prévues</h3>
+        <div class="features-list">
+            <ul>
+                <li>Recherche de joueur par Riot ID (Username#Tag)</li>
+                <li>Analyse des 10 dernières parties en Solo Queue</li>
+                <li>Calcul de l'ELO moyen des adversaires rencontrés</li>
+                <li>Estimation du MMR avec indicateur de tendance (Rising/Stable/Falling)</li>
+                <li>Affichage du winrate et des statistiques récentes</li>
+                <li>Interface moderne aux couleurs de Valorant</li>
+            </ul>
+        </div>
+
+        <h3 class="section-subtitle">État d'avancement</h3>
+        <div class="process-timeline">
+            <div class="process-step">
+                <div class="step-number">✓</div>
+                <h4>Interface UI</h4>
+                <p>Design et intégration front-end terminés.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">✓</div>
+                <h4>Logique de calcul</h4>
+                <p>Algorithme d'estimation du MMR implémenté.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">⏳</div>
+                <h4>Connexion API</h4>
+                <p>Intégration avec l'API Riot en cours (données de test actuellement).</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">⏳</div>
+                <h4>Déploiement</h4>
+                <p>Hébergement et mise en production à venir.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="competences" class="container">
+        <h2>Technologies & Compétences</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <img src="images/icones_competences/js.png" alt="JavaScript">
+                <h3>JavaScript</h3>
+                <p>Développement front-end et logique applicative.</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/icones_competences/html-5.png" alt="HTML">
+                <h3>HTML / CSS</h3>
+                <p>Interface utilisateur moderne et responsive.</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/icones_competences/json.png" alt="Communication API">
+                <h3>Communication API</h3>
+                <p>Communication avec l'API Riot Games (Valorant).</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/icones_competences/settings.png" alt="Algorithmique">
+                <h3>Algorithmique</h3>
+                <p>Conception de l'algorithme d'estimation du MMR.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact & Ressources</h2>
+        <p>Projet personnel en cours de développement — le code source sera disponible prochainement.</p>
+        <div class="contact-links">
+            <a href="https://github.com/EstebanRemond" target="_blank">
+                <img src="images/github.png" alt="GitHub" class="contact-logo">
+            </a>
+            <a href="https://www.linkedin.com/in/esteban-rémond" target="_blank">
+                <img src="images/linkedin.png" alt="LinkedIn" class="contact-logo">
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Portfolio Esteban Rémond. Tous droits réservés.</p>
+</footer>
+</body>
+</html>
