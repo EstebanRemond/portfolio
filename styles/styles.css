@@ -312,7 +312,7 @@ nav a:hover::after {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-bottom: 3px solid var(--primary-color);
+    border-bottom: none;
 }
 
 .projets-grid {
@@ -608,7 +608,7 @@ footer {
     text-align: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-bottom: 3px solid transparent;
+    border: 1px solid #e9ecef;
 }
 
 .card-icon {
@@ -662,7 +662,7 @@ footer {
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-bottom: 3px solid transparent;
+    border: 1px solid #e9ecef;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -673,7 +673,7 @@ footer {
 .bio-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-    border-bottom: 3px solid var(--primary-color);
+    border-color: #dfe5ea;
 }
 
 .card-icon-img {
@@ -698,15 +698,7 @@ footer {
 }
 
 .bio-card h3::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40px;
-    height: 2px;
-    background-color: var(--primary-color);
-    opacity: 0.3;
+    content: none;
 }
 
 .bio-card p {
@@ -765,12 +757,12 @@ footer {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     text-align: center;
     transition: transform 0.3s ease;
-    border-bottom: 3px solid transparent;
+    border: 1px solid #e9ecef;
 }
 
 .mission-card:hover {
     transform: translateY(-5px);
-    border-bottom: 3px solid var(--primary-color);
+    border-color: #dfe5ea;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
